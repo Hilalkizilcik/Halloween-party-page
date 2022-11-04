@@ -65,6 +65,31 @@ body {
   margin: auto;
 }
 
+.scroll-top {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background-color: var(--hallow-to-color);
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  box-shadow: var(--light-box-shadow);
+}
+
+.scroll-top span {
+  color: #fff;
+  font-weight: bold;
+  font-size: 16pt;
+  padding-bottom: 2px;
+}
+
 /* header container */
 .content-container {
   height: 100%;

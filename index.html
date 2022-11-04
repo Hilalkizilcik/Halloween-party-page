@@ -22,6 +22,11 @@
   <audio autoplay>
     <source src="/assets/images/music/videoplayback.mp3">
   </audio>
+
+  <div class="scroll-top">
+    <span>↑</span>
+  </div>
+
   <!-- container -->
   <div class="content-container">
     <div id="#header" class="container">
@@ -83,8 +88,8 @@
     </div>
   </div>
 
-  <h1 class="t-o-t">TRICK OR TREAT</h1>
   <!-- cards -->
+  <h1 class="t-o-t" id="buy-ticket">TRICK OR TREAT</h1>
   <div class="cards-container">
     <div class="cards">
       <div class="card">
@@ -132,12 +137,8 @@
   </div>
 
   <!-- footer -->
-
-  <footer class="footer">
-
+  <footer class="footer" id="contact">
     <img class="book" src="/assets/images/book.png" alt="">
-
-
   </footer>
 
 
@@ -147,6 +148,14 @@
       top: 0,
       behavior: 'smooth'
     });
+
+    document.querySelector(".scroll-top")
+      .addEventListener("click", function () {
+        window.scrollTo({
+          top: 0,
+          behavior: 'smooth'
+        });
+      })
   </script>
 </body>
 
